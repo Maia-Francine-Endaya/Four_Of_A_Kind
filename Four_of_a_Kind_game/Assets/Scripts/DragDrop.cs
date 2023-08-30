@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DragDrop : MonoBehaviour
 {
+  [SerializeField] private float dragSpeed = 2.0f;
   private bool isDragging = false;
   private Vector3 offset;
 
@@ -17,7 +18,6 @@ public class DragDrop : MonoBehaviour
   private void OnMouseUp()
   {
     isDragging = false;
-    Debug.Log(isDragging);
   }
 
   private Vector3 GetMouseWorldPos()
@@ -33,7 +33,11 @@ public class DragDrop : MonoBehaviour
   {
     if (isDragging)
     {
+      Vector3 mousePos = GetMouseWorldPos();
       Vector3 newPos = GetMouseWorldPos() + offset;
+
+      Vector3 movement = (newPos - transform.position) * dragSpeed * Time.deltaTime;
+      transform.Translate(movement);
       transform.position = newPos;
     }
   }

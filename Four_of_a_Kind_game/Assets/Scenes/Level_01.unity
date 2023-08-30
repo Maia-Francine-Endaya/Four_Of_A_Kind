@@ -572,6 +572,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6792365817142357368, guid: 6a19841f282744f708703cb9301c9156,
+        type: 3}
+      propertyPath: dragSpeed
+      value: 5000
+      objectReference: {fileID: 0}
     - target: {fileID: 8177496169806765475, guid: 6a19841f282744f708703cb9301c9156,
         type: 3}
       propertyPath: m_Name
@@ -656,6 +661,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 786091588183995899, guid: bcff60ef9e5444048968288712aa295b,
+        type: 3}
+      propertyPath: dragSpeed
+      value: 5000
+      objectReference: {fileID: 0}
     - target: {fileID: 8415488506849469064, guid: bcff60ef9e5444048968288712aa295b,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1163,6 +1173,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5560335215704561086, guid: c30678f72b710494dbc0f55eb0258c8c,
+        type: 3}
+      propertyPath: dragSpeed
+      value: 5000
+      objectReference: {fileID: 0}
     - target: {fileID: 8379905133658315536, guid: c30678f72b710494dbc0f55eb0258c8c,
         type: 3}
       propertyPath: m_Name
@@ -1934,6 +1949,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Flag_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 8172208819028443736, guid: f1e29ee4f5adb473b9e5c21853587f68,
+        type: 3}
+      propertyPath: dragSpeed
+      value: 5000
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7178073708077646457, guid: f1e29ee4f5adb473b9e5c21853587f68, type: 3}
