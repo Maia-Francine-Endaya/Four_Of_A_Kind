@@ -133,10 +133,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 371b5e4f2f04f4aaaa5c41de13c2fe65,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3829317842502166530}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 371b5e4f2f04f4aaaa5c41de13c2fe65,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5267042822815052262}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 371b5e4f2f04f4aaaa5c41de13c2fe65,
         type: 3}
@@ -182,19 +178,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3792e513d9d534f0ba8c4b2aa384960e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3829317842502166530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 238078141363989864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92744f75aee4a426aaf2ab4e857f37e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypointSize: 1
+  waypoints: {fileID: 0}
+  playerAI: {fileID: 0}
+  rotateSpeed: 10
+  distanceThreshold: 0.1
 --- !u!114 &5267042822815052262
 MonoBehaviour:
   m_ObjectHideFlags: 0
