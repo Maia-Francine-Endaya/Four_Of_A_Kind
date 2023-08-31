@@ -6,12 +6,14 @@ public class PausePlay : MonoBehaviour
 {
   public void Pause()
   {
-    //TO DO: PUT CODE HERE
+    Time.timeScale = 0;
+    Debug.Log("Game Paused");
   }
 
   public void Play()
   {
-    //TO DO: PUT CODE HERE
+    Time.timeScale = 1;
+    Debug.Log("Game Resumed");
   }
 
   public void Replay()
