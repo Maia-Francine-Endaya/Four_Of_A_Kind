@@ -6,12 +6,13 @@ public class PlayerController : MonoBehaviour
 {
   public float playerSpeed = 2f;
 
-  // void OnTriggerEnter(Collider collision)
-  // {
-  //   Debug.Log("On Collision Enter");
-  //   if (collision.gameObject.tag == "Key")
-  //   {
-  //     Debug.Log("Key Obtained");
-  //   }
-  // }
+  // Debug Logs
+  void OnTriggerEnter(Collider collision)
+  {
+    Debug.Log("On Collision Enter");
+    if (collision.gameObject.tag == "Key")
+    {
+      Debug.Log("Key Obtained");
+    }
+  }
 }

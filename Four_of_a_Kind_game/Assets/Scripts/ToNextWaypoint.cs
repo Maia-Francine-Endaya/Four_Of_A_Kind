@@ -2,14 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ToNextWaypoint : MonoBehaviour
+public class NextWaypoint : MonoBehaviour
 {
-  //Stores waypoints
+  // Stores waypoints to be used
   [SerializeField] private Waypoints waypoints;
   [SerializeField] private PlayerController playerAI;
 
+  //Rotation Speed
+
   [Range(0f, 15f)]
   [SerializeField] private float rotateSpeed = 10f;
+
+
   [SerializeField] private float distanceThreshold = 0.1f;
 
   private Transform currentWaypoint;
@@ -20,6 +24,9 @@ public class ToNextWaypoint : MonoBehaviour
   {
     // Initial Waypoint
     currentWaypoint = waypoints.GetNextWaypoint(currentWaypoint);
+
+    // Sets Initial position as starting waypoint
+    // transform.position = currentWaypoint.position;
   }
 
   void Update()
@@ -28,6 +35,7 @@ public class ToNextWaypoint : MonoBehaviour
     if (Vector3.Distance(transform.position, currentWaypoint.position) < distanceThreshold)
     {
       currentWaypoint = waypoints.GetNextWaypoint(currentWaypoint);
+      // transform.LookAt(currentWaypoint);
     }
 
     RotateToWaypoint();
@@ -40,6 +48,4 @@ public class ToNextWaypoint : MonoBehaviour
 
     transform.rotation = Quaternion.Slerp(transform.rotation, rotationGoal, rotateSpeed * Time.deltaTime);
   }
-
-
 }

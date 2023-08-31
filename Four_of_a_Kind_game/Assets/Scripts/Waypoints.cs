@@ -33,6 +33,7 @@ public class Waypoints : MonoBehaviour
     if (currentWaypoint == null)
     {
       return transform.GetChild(0);
+
     }
 
 
