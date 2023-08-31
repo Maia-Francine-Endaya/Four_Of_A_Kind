@@ -26,7 +26,7 @@ public class DragDrop : MonoBehaviour
     mousePos.z = Camera.main.nearClipPlane;
     return Camera.main.ScreenToWorldPoint(mousePos);
 
-    Debug.Log(mousePos);
+    // Debug.Log(mousePos);
   }
 
   private void Update()
