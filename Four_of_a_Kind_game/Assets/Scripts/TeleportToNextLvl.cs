@@ -9,7 +9,7 @@ public class TeleportToNextLvl : MonoBehaviour
   {
     if (other.gameObject.name == "Player")
     {
-      SceneManager.LoadScene(1);
+      SceneManager.LoadScene("Level_02");
     }
   }
 }
