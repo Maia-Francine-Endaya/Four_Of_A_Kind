@@ -34,9 +34,12 @@ public class DragDrop : MonoBehaviour
     if (isDragging)
     {
       Vector3 mousePos = GetMouseWorldPos();
+
+      mousePos.y = transform.position.y;
       Vector3 newPos = GetMouseWorldPos() + offset;
 
-      Vector3 movement = (newPos - transform.position) * dragSpeed * Time.deltaTime;
+      //The player will be able to move the flags even when the game is paused
+      Vector3 movement = (newPos - transform.position) * dragSpeed * Time.realtimeSinceStartup;
       transform.Translate(movement);
       transform.position = newPos;
     }

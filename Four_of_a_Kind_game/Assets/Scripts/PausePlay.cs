@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PausePlay : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class PausePlay : MonoBehaviour
 
   public void Replay()
   {
-    //TO DO: PUT CODE HERE
+    SceneManager.LoadScene("Level_01");
+    Time.timeScale = 0;
+    Debug.Log("Game Restarted");
   }
 }
